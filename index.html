@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyricsfy - Get song lyrics instantly</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="text-black m-5 d-flex justify-content-center align-items-center flex-column">
+    <a href="https://x.com/zikk_szn" class="position-fixed top-0 end-0 p-4"><img src="assets/icons/twitter-icon.svg" alt="My twitter (X) account" width="25" height="25"></a>
+    <h1 class="fw-bold">Lyricsfy</h1>
+    <p class="m-3">Get song <span class="text-info fw-bold">lyrics</span> instantly!</p>
+    
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <input type="text" name="song-details" id="song-details" placeholder="Artist name, song name" class="form-control-lg">
+        <button id="search-btn" class="btn btn-lg btn-dark m-4">Search Lyrics</button>
+    </div>
+    
+    <div>
+        <p id="error-message" class="text-danger m-4"></p>
+        
+        <p class="lyrics box-shadow m-4 rounded-4 p-3 d-none"></p>
+    </div>
+    
+    <footer class="position-fixed bottom-0 bg-light p-2">
+        <p>Built with &hearts; by Isaac Ugochukwu | 2025</p>
+    </footer>
+    
+    <script src="/assets/index.js"></script>
+</body>
+</html>
