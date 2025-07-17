@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/assets/Space_Grotesk/SpaceGrotesk-Regular.ttf);
+}
+
+body {
+  font: 1rem Space Grotesk, sans-serif;
+  background-color: #F8FAFC;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.box-shadow {
+  background: black;
+  color: white;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.26);
+  width: 95%;
+}
+
+.pos-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
