@@ -9,17 +9,18 @@ document.querySelector('#search-btn').addEventListener('click', () => {
     return
   }
   
-  //const snippet = 'Is it a crime, baby baby, baby sunmomi you know say you match my steeze'
-  //const apiKey = '8a80bde9a41ac07cdcdba471db7cd10c'
-  
+  document.querySelector('#loader').classList.remove('d-none')
+  document.querySelector('#loader').classList.add('d-flex')
   
   fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
   .then(response => response.json())
   .then(data => {
     if (data.lyrics) {
       console.log(data)
+      document.querySelector('#loader').classList.remove('d-flex')
+      document.querySelector('#loader').classList.add('d-none')
       document.querySelector('.lyrics').classList.remove('d-none')
-      document.querySelector('.lyrics').classList.add('d-flex')
+      document.querySelector('.lyrics').classList.add('box-shadow')
       document.querySelector('.lyrics').textContent = data.lyrics
     } else {
       document.querySelector('#error-message').textContent = 'Lyrics not found!'
